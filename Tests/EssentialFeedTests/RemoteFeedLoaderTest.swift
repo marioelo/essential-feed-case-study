@@ -42,9 +42,10 @@ final class RemoteFeedLoaderTest: XCTestCase {
         var capturedErrors = [RemoteFeedLoader.Error]()
         sut.load { capturedErrors.append($0) }
         
-        client.complete(withStatusCode: 400)
+        let testedCodes = [199, 201, 300, 400, 500]
+        testedCodes.forEach { client.complete(withStatusCode: $0) }
         
-        XCTAssertEqual(capturedErrors, [.invalidData])
+        XCTAssertEqual(capturedErrors, testedCodes.map { _ in .invalidData })
     }
     
     func test_load_requestsDataFromURLTwice() {
