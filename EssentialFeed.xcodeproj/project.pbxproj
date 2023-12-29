@@ -53,6 +53,7 @@
 		BA0ADBAC2B3E66FB00A1759D /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		BA6982C12B3E6A0300FCA157 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6982C32B3E6A0300FCA157 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		BAC71FAA2B3E712800B270D8 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		BA0ADB512B3E643200A1759D = {
 			isa = PBXGroup;
 			children = (
+				BAC71FAA2B3E712800B270D8 /* CI.xctestplan */,
 				BA0ADB5D2B3E643200A1759D /* EssentialFeed */,
 				BA0ADB672B3E643200A1759D /* EssentialFeedTests */,
 				BA6982C22B3E6A0300FCA157 /* EssentialFeedAPIEndToEndTests */,
